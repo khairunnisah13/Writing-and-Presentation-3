@@ -64,39 +64,62 @@ console.log("sesudah di push", data)
 let antrianMinyak = [];
 
 antrianMinyak.push("Agus");
+
 antrianMinyak.push("Asep");
+
 antrianMinyak.push("Didin");
+
 antrianMinyak.push("Dede");
+
 antrianMinyak.push("Siti");
 
 console.log(antrianMinyak);
 
-// Contoh Shift
+
+// Contoh Shift:
 console.log(antrianMinyak.shift());
 
+
 // Contoh Unshift (method untuk menambahkan data diurutan depan.)
+
 antrianMinyak.unshift("Ujang");
 
+
 // Contoh Sort (untuk membuat data berurutan)
+
 let number = [1, 45, 0, -2, 29, 11];
+
 console.log(number);
+
 console.log(number.sort());
+
 
 // Perulangan Array menggunakan Foreach
 // Tidak memiliki nilai balikan atau return
+
 antrianMinyak.forEach((item, index) => {
+
   antrianMinyak[index] = item + " " + index;
+  
 });
 
 console.log(antrianMinyak);
 
+
 // Perulangan Array menggunakan Map
+
 let antrianMinyakAsep = antrianMinyak.map((item) => {
+
   if (item === "Asep") {
+  
     return true;
+    
   } else {
+  
     return false;
+    
   }
+
 });
 
 console.log(antrianMinyakAsep);
